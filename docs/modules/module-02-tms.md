@@ -41,11 +41,11 @@ Controlling the rate at which vehicles enter the highway.
 
 ```mermaid
 graph LR
-    subgraph Highway
+    subgraph Highway ["Highway Mainline"]
     D[Downstream Detector] -->|Occupancy %| C[Ramp Controller]
     end
     
-    subgraph Ramp
+    subgraph Ramp ["On-Ramp"]
     Q[Queue Detector] -->|Queue Length| C
     C -->|Green/Red Signal| L[Meter Light]
     L -->|Release Vehicle| H[Highway Flow]
