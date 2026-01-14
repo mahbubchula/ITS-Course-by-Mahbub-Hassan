@@ -936,9 +936,18 @@
 <p class="admonition-title">Green Waves (Coordination)</p>
 <p>By timing lights so that a "platoon" of cars hits every green light at a specific speed (the "Progression Speed"), we create a green wave. This significantly reduces fuel consumption and emissions.</p>
 </div>
-<pre class="mermaid"><code>graph LR
-    A[Light 1: Green] --- B[Light 2: Green] --- C[Light 3: Green]
-    Note over A,C: Cars move at 50km/h without stopping</code></pre>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Car
+    participant L1 as Light 1
+    participant L2 as Light 2
+    participant L3 as Light 3
+
+    Note over Car, L3: Green Wave Progression (Speed: 50km/h)
+    L1-&gt;&gt;Car: Green
+    Car-&gt;&gt;L2: Arrives at Green
+    L2-&gt;&gt;Car: Green
+    Car-&gt;&gt;L3: Arrives at Green
+    L3-&gt;&gt;Car: Green</code></pre>
 <hr />
 <h2 id="4-emergency-operations">4. Emergency Operations</h2>
 <p>In an emergency, the normal rules of traffic must change instantly.</p>
