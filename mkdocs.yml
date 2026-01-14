@@ -9,30 +9,30 @@ nav:
   - Home: index.md
   - Syllabus & Outcomes: syllabus.md
   - Modules:
-    - Mod 1: ITS Architecture: modules/module-01-architecture.md
-    - Mod 2: Traffic Management Systems: modules/module-02-tms.md
-    - Mod 3: Connected Vehicles: modules/module-03-connected-vehicles.md
-    - Mod 4: Data Management: modules/module-04-data-management.md
-    - Mod 5: System Integration: modules/module-05-integration.md
-    - Mod 6: Traffic Control: modules/module-06-traffic-control.md
-    - Mod 7: Network Security: modules/module-07-security.md
-    - Mod 8: Standards: modules/module-08-standards.md
-    - Mod 9: Performance Analysis: modules/module-09-performance.md
-    - Mod 10: Operations Management: modules/module-10-operations.md
+    - "Mod 1: ITS Architecture": modules/module-01-architecture.md
+    - "Mod 2: Traffic Management Systems": modules/module-02-tms.md
+    - "Mod 3: Connected Vehicles": modules/module-03-connected-vehicles.md
+    - "Mod 4: Data Management": modules/module-04-data-management.md
+    - "Mod 5: System Integration": modules/module-05-integration.md
+    - "Mod 6: Traffic Control": modules/module-06-traffic-control.md
+    - "Mod 7: Network Security": modules/module-07-security.md
+    - "Mod 8: Standards": modules/module-08-standards.md
+    - "Mod 9: Performance Analysis": modules/module-09-performance.md
+    - "Mod 10: Operations Management": modules/module-10-operations.md
 
 # Theme settings
 theme:
   name: material
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: pink
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: pink
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
