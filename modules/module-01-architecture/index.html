@@ -1031,12 +1031,12 @@
 <h3 id="the-feedback-loop">The Feedback Loop</h3>
 <p>The core of any ITS architecture is the <strong>Monitor-Analyze-Plan-Execute (MAPE)</strong> loop.</p>
 <pre class="mermaid"><code>graph TD
-    subgraph Physical_World
+    subgraph Physical_World ["Physical World"]
     P1[Road Network] --&gt;|Sensor Data| M[Monitor]
     E[Execute] --&gt;|Control Signals| P1
     end
 
-    subgraph Cyber_World
+    subgraph Cyber_World ["Cyber World"]
     M --&gt;|Raw Data| A[Analyze]
     A --&gt;|Traffic Patterns| PL[Plan]
     PL --&gt;|Strategies| E
