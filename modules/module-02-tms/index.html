@@ -1011,11 +1011,11 @@ Modern <strong>Advanced Traffic Management Systems (ATMS)</strong> are <strong>P
 <li><strong>ALINEA Algorithm:</strong> A feedback loop that adjusts metering based on <em>downstream</em> occupancy.</li>
 </ul>
 <pre class="mermaid"><code>graph LR
-    subgraph Highway
+    subgraph Highway ["Highway Mainline"]
     D[Downstream Detector] --&gt;|Occupancy %| C[Ramp Controller]
     end
 
-    subgraph Ramp
+    subgraph Ramp ["On-Ramp"]
     Q[Queue Detector] --&gt;|Queue Length| C
     C --&gt;|Green/Red Signal| L[Meter Light]
     L --&gt;|Release Vehicle| H[Highway Flow]
