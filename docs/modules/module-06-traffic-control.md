@@ -59,9 +59,18 @@ The goal of optimization is to minimize **Delay** and **Stops**.
     By timing lights so that a "platoon" of cars hits every green light at a specific speed (the "Progression Speed"), we create a green wave. This significantly reduces fuel consumption and emissions.
 
 ```mermaid
-graph LR
-    A[Light 1: Green] --- B[Light 2: Green] --- C[Light 3: Green]
-    Note over A,C: Cars move at 50km/h without stopping
+sequenceDiagram
+    participant Car
+    participant L1 as Light 1
+    participant L2 as Light 2
+    participant L3 as Light 3
+
+    Note over Car, L3: Green Wave Progression (Speed: 50km/h)
+    L1->>Car: Green
+    Car->>L2: Arrives at Green
+    L2->>Car: Green
+    Car->>L3: Arrives at Green
+    L3->>Car: Green
 ```
 
 ---

@@ -40,12 +40,12 @@ The core of any ITS architecture is the **Monitor-Analyze-Plan-Execute (MAPE)** 
 
 ```mermaid
 graph TD
-    subgraph Physical_World
+    subgraph Physical_World ["Physical World"]
     P1[Road Network] -->|Sensor Data| M[Monitor]
     E[Execute] -->|Control Signals| P1
     end
 
-    subgraph Cyber_World
+    subgraph Cyber_World ["Cyber World"]
     M -->|Raw Data| A[Analyze]
     A -->|Traffic Patterns| PL[Plan]
     PL -->|Strategies| E
